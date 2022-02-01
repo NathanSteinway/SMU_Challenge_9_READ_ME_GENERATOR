@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/NathanSteinway/SMU_Challenge_9_READ_ME_GENERATOR/issues"
   },
-  "homepage": "https://github.com/NathanSteinway/SMU_Challenge_9_READ_ME_GENERATOR#readme"
+  "homepage": "https://github.com/NathanSteinway/SMU_Challenge_9_READ_ME_GENERATOR#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
