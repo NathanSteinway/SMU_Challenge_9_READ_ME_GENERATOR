@@ -1,36 +1,38 @@
-
+//Renders a license badge depending on the choice made within questions.choices[].
+//Returns an empty string is No License is chosen.
 function renderLicenseBadge(license) {
 
-    if(license !== choices[2]){
+    if(license !== questions.choices[2]){
       return `![badge](https://img.shields.io/badge/license-${license}-green)`;
     } else {
       return '';
     }
 }
 
-
+//Returns a license link from choices.
+//Returns an empty string if No License is chosen.
 function renderLicenseLink(license) {
 
-  if(license !== choices[2]){
+  if(license !== questions.choices[2]){
     return `[${license}](https://choosealicense.com/licenses/${license})`;
   } else {
     return '';
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+//Returns the license section of the README.md file
+//returns an empty string if no license is chosen
 function renderLicenseSection(license) {
 
-  if (license !== choices[2]){
+  if (license !== questions.choices[2]){
     return '##[License](#license)';
   } else {
     return '';
   }
-  
 }
 
-// TODO: Create a function to generate markdown for README
+//This function generates markdown to be written to README.md
+
 function generateMarkdown(data) {
   return `# ${data.title}
   ## Description
@@ -40,21 +42,24 @@ function generateMarkdown(data) {
 
     [Installation](#installation)
     [Usage](#usage)
+    [Contribute](#contribution)
+    [Tests](#tests)
+    [My Contact Information](#questions)
     [License](#license)
 
-  ## Installation
+  ## [Installation](#Table of Contents)
     ${data.installation}
-  ## Usage
+  ## [Usage](#Table of Contents)
     ${data.usage}
-  ## Contribute
+  ## [Contribute](#Table of Contents)
     ${data.contribution}
-  ## Tests
+  ## [Tests](#Table of Contents)
     ${data.tests}
-  ## License
+  ## [License](#Table of Contents)
     ${renderLicenseBadge(data.license)}
-  ## Username
+  ## [Username](#Table of Contents)
     [${data.username}](https://www.github.com/${data.username})
-  ## Questions
+  ## [My Contact Information](#Table of Contents)
     [${data.email}](${data.email})
 `;
 }
