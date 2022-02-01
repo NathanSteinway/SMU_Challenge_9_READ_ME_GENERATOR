@@ -22,6 +22,12 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 
+  if (license !== choices[2]){
+    return '##[License](#license)';
+  } else {
+    return '';
+  }
+  
 }
 
 // TODO: Create a function to generate markdown for README
@@ -31,10 +37,9 @@ function generateMarkdown(data) {
     ${data.descripton}
 
   ##Table of Contents
-  
+
     [Installation](#installation)
     [Usage](#usage)
-    [Credits](#credits)
     [License](#license)
 
   ## Installation
