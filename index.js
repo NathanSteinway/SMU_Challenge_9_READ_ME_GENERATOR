@@ -6,8 +6,8 @@ const path = require('path');
 // link to js that will generate our markdown
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// Array containing the questions a user will be asked to answer while creating a README
 
+// Array containing the questions a user will be asked to answer while creating a README
 const questions = [
 
     // Questions asking for user input begin here

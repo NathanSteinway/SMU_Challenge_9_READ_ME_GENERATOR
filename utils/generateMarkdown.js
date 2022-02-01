@@ -2,7 +2,7 @@
 //Returns an empty string is No License is chosen.
 function renderLicenseBadge(license) {
 
-    if(license !== questions.choices[2]){
+    if(license !== 'No License'){
       return `![badge](https://img.shields.io/badge/license-${license}-green)`;
     } else {
       return '';
@@ -13,7 +13,7 @@ function renderLicenseBadge(license) {
 //Returns an empty string if No License is chosen.
 function renderLicenseLink(license) {
 
-  if(license !== questions.choices[2]){
+  if(license !== 'No License'){
     return `[${license}](https://choosealicense.com/licenses/${license})`;
   } else {
     return '';
@@ -24,7 +24,7 @@ function renderLicenseLink(license) {
 //returns an empty string if no license is chosen
 function renderLicenseSection(license) {
 
-  if (license !== questions.choices[2]){
+  if (license !== 'No License'){
     return '##[License](#license)';
   } else {
     return '';
@@ -36,7 +36,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
   ## Description
-    ${data.descripton}
+    ${data.description}
 
   ##Table of Contents
 
@@ -58,10 +58,11 @@ function generateMarkdown(data) {
   ## [License](#Table of Contents)
     ${renderLicenseBadge(data.license)}
   ## [Username](#Table of Contents)
-    [${data.username}](https://www.github.com/${data.username})
+    [${data.githubusername}](https://www.github.com/${data.username})
   ## [My Contact Information](#Table of Contents)
     [${data.email}](${data.email})
 `;
 }
 
 module.exports = generateMarkdown;
+
