@@ -6,9 +6,11 @@ const path = require('path');
 // link to js that will generate our markdown
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// Array containing the questions a user will be asked to answer while creating a README
+
 const questions = [
 
+    // Questions asking for user input begin here
     {
         type: 'input',
         name: 'title',
@@ -39,6 +41,9 @@ const questions = [
         name: 'tests',
         message: 'How is your project tested?'
     },
+
+    // type list ensures that inquirer knows to allow the user to choose between options provided within [choices]
+    
     {
         type: 'list',
         name: 'license',
@@ -59,13 +64,19 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+    fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
 
-// TODO: Create a function to initialize app
+// This function initializes the application.
 function init() {
+
+    //Upon launch, inquirer will prompt the user with questions contained within [questions]
+    //Then passes answers to generateMarkdown() located within ./utils/generateMarkdown.js
+    //THEN calls writeToFile() located above
+    // Which passes README.md as the file to be written to and const markdown as the data to be written.
     inquirer.prompt(questions).then(answers => {
-        console.log('done');
+        const markdown = generateMarkdown(answers);
+        writeToFile('README.md', markdown);
     })
 }
 
