@@ -38,7 +38,7 @@ function generateMarkdown(data) {
   ## Description
     ${data.description}
 
-  ##Table of Contents
+  ## Table of Contents
 
   * [Installation](#installation)
   * [Usage](#usage)
@@ -59,7 +59,7 @@ function generateMarkdown(data) {
   ## [License](#Table of Contents)
     ${renderLicenseBadge(data.license)}
   ## [Username](#Table of Contents)
-    [${data.githubusername}](https://www.github.com/${data.username})
+    [${data.githubusername}](https://www.github.com/${data.githubusername})
   ## [My Contact Information](#Table of Contents)
     [${data.email}]
 `;
