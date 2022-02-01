@@ -42,11 +42,11 @@ function generateMarkdown(data) {
 
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contributing)
+  * [Contribution](#contribution)
   * [Tests](#tests)
   * [License](#license)
-  * [Username](#username)
-  * [Questions](#questions)
+  * [Username](#githubusername)
+  * [My Contact Information](#email)
 
   ## [Installation](#Table of Contents)
     ${data.installation}
@@ -61,7 +61,7 @@ function generateMarkdown(data) {
   ## [Username](#Table of Contents)
     [${data.githubusername}](https://www.github.com/${data.username})
   ## [My Contact Information](#Table of Contents)
-    [${data.email}](${data.email})
+    [${data.email}]
 `;
 }
 
