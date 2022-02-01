@@ -48,7 +48,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which licenses does your product use?',
-        choices: ['MIT', 'Apache 2.0']
+        choices: ['MIT', 'Apache 2.0', 'No License']
     },
     {
         type: 'input',
@@ -62,7 +62,7 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+//This function identifies the file to be written to then takes markdown as an argument.
 function writeToFile(fileName, data) {
     fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
