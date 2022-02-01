@@ -13,7 +13,7 @@
   * [My Contact Information](#email)
 
   ## Installation
-   > Install the program by cloning the repo to your local repo. Check that you have Node.JS installed; once you do, be sure to install inquirer.
+    Install the program by cloning the repo to your local repo. Check that you have Node.JS installed; once you do, be sure to install inquirer.
   ## Usage
     Input the command "node index.js" into your terminal. You will be prompted by the application to provide information. Provide the terminal the information when prompted, then a completed README.md will be written. Below is a link to the visual tutorial on how to use this application.
   ## Contribution
