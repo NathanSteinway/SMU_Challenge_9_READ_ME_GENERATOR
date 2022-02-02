@@ -1,8 +1,8 @@
 
   # 
-TestProject
+Test
   ## Description
-This is a test.
+Its a test
 
   ## Table of Contents
 
@@ -15,18 +15,18 @@ This is a test.
   * [My Contact Information](#My-Contact-Information)
 
   ## Installation
-Through github.
+Through github
   ## Usage
-Quickly.
+Frequently
   ## Contribution
-Never!
+Cant yet
   ## Tests
-Poorly!
+Frequently
   ## Licenses
-![badge](https://img.shields.io/badge/license-Apache 2.0-blue)
-[Apache 2.0](https://choosealicense.com/licenses/Apache 2.0)
+![badge](https://img.shields.io/badge/license-MIT-blue)
+[MIT](https://choosealicense.com/licenses/MIT)
 ## [License]
   ## Username
 [NathanSteinway](https://www.github.com/NathanSteinway)
   ## My Contact Information
-[steinway.nathan@gmail.com]
+[oksdoksdoksd@gmail.com]
