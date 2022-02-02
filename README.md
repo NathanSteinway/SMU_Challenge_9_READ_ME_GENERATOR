@@ -1,6 +1,5 @@
 
-  # 
-README Generator
+  # README Generator
   ## Description
 This application uses a series of prompts and user input to generate a README.md to be pushed to the remote repository.
 
