@@ -1,8 +1,8 @@
 
   # 
-Test
+README Generator
   ## Description
-Its a test
+This application uses a series of prompts and user input to generate a README.md to be pushed to the remote repository.
 
   ## Table of Contents
 
@@ -15,13 +15,13 @@ Its a test
   * [My Contact Information](#My-Contact-Information)
 
   ## Installation
-Through github
+Simply clone this repository from github and install the necessary dependencies (inquirer, nodejs)
   ## Usage
-Frequently
+https://www.awesomescreenshot.com/video/7172513?key=61e2c7b9b19194cd44dd1d0b1e2ca2f3
   ## Contribution
-Cant yet
+If you wish to contribute, please fork this repository and use my contact information at the bottom of this README to let me know what you end up doing with it!
   ## Tests
-Frequently
+It is tested by using it in your chosen command line.
   ## Licenses
 ![badge](https://img.shields.io/badge/license-MIT-blue)
 [MIT](https://choosealicense.com/licenses/MIT)
@@ -29,4 +29,4 @@ Frequently
   ## Username
 [NathanSteinway](https://www.github.com/NathanSteinway)
   ## My Contact Information
-[oksdoksdoksd@gmail.com]
+[steinway.nathan@gmail.com]
