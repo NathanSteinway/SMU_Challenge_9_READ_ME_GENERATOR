@@ -1,8 +1,8 @@
 
   # 
-t
+TestProject
   ## Description
-t
+This is a test.
 
   ## Table of Contents
 
@@ -15,18 +15,18 @@ t
   * [My Contact Information](#My-Contact-Information)
 
   ## Installation
-t
+Through github.
   ## Usage
-t
+Quickly.
   ## Contribution
-t
+Never!
   ## Tests
-t
+Poorly!
   ## Licenses
-![badge](https://img.shields.io/badge/license-MIT-blue)
-[MIT](https://choosealicense.com/licenses/MIT)
+![badge](https://img.shields.io/badge/license-Apache 2.0-blue)
+[Apache 2.0](https://choosealicense.com/licenses/Apache 2.0)
 ## [License]
   ## Username
-[t](https://www.github.com/t)
+[NathanSteinway](https://www.github.com/NathanSteinway)
   ## My Contact Information
-[t]
+[steinway.nathan@gmail.com]
